@@ -1,0 +1,17 @@
+<div style="text-align: center; margin-top: 50px;">
+  <h1>Calculadora</h1>
+
+  <div>
+    <input type="number" [(ngModel)]="numero1" placeholder="Primer número">
+    <input type="number" [(ngModel)]="numero2" placeholder="Segundo número">
+  </div>
+
+  <div style="margin-top: 15px;">
+    <button (click)="sumar()">+ Sumar</button>
+    <button (click)="restar()">- Restar</button>
+    <button (click)="multiplicar()">× Multiplicar</button>
+    <button (click)="dividir()">÷ Dividir</button>
+  </div>
+
+  <h2 style="margin-top: 20px;">{{ operacion }}: {{ resultado }}</h2>
+</div>
