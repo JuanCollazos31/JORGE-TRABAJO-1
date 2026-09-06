@@ -1,0 +1,26 @@
+import { Component, signal } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet],
+  templateUrl: './app.html',
+  styleUrl: './app.css'
+})
+export class App {
+  protected readonly title = signal('primer-trabajo-jorge');
+
+  contador = 0;
+
+  sumar() {
+    this.contador++;
+  }
+
+  restar() {
+    this.contador--;
+  }
+
+  resetear() {
+    this.contador = 0;
+  }
+}
